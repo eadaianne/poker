@@ -60,67 +60,69 @@ let carta52 = new Cartas("ouros", A);
 
 const BARALHO = [52];
 
-  BARALHO.push(carta1);
-  BARALHO.push(carta2);
-  BARALHO.push(carta3);
-  BARALHO.push(carta4);
-  BARALHO.push(carta5);
-  BARALHO.push(carta6);
-  BARALHO.push(carta7);
-  BARALHO.push(carta8);
-  BARALHO.push(carta9);
-  BARALHO.push(carta10);
-  BARALHO.push(carta11);
-  BARALHO.push(carta12);
-  BARALHO.push(carta13);
-  BARALHO.push(carta14);
-  BARALHO.push(carta15);
-  BARALHO.push(carta16);
-  BARALHO.push(carta17);
-  BARALHO.push(carta18);
-  BARALHO.push(carta19);
-  BARALHO.push(carta20);
-  BARALHO.push(carta21);
-  BARALHO.push(carta22);
-  BARALHO.push(carta23);
-  BARALHO.push(carta24);
-  BARALHO.push(carta25);
-  BARALHO.push(carta26);
-  BARALHO.push(carta27);
-  BARALHO.push(carta28);
-  BARALHO.push(carta29);
-  BARALHO.push(carta30);
-  BARALHO.push(carta31);
-  BARALHO.push(carta32);
-  BARALHO.push(carta33);
-  BARALHO.push(carta34);
-  BARALHO.push(carta35);
-  BARALHO.push(carta36);
-  BARALHO.push(carta37);
-  BARALHO.push(carta38);
-  BARALHO.push(carta39);
-  BARALHO.push(carta40);
-  BARALHO.push(carta41);
-  BARALHO.push(carta42);
-  BARALHO.push(carta43);
-  BARALHO.push(carta44);
-  BARALHO.push(carta45);
-  BARALHO.push(carta46);
-  BARALHO.push(carta47);
-  BARALHO.push(carta48);
-  BARALHO.push(carta49);
-  BARALHO.push(carta50);
-  BARALHO.push(carta51);
-  BARALHO.push(carta52);
+BARALHO.push(carta1);
+BARALHO.push(carta2);
+BARALHO.push(carta3);
+BARALHO.push(carta4);
+BARALHO.push(carta5);
+BARALHO.push(carta6);
+BARALHO.push(carta7);
+BARALHO.push(carta8);
+BARALHO.push(carta9);
+BARALHO.push(carta10);
+BARALHO.push(carta11);
+BARALHO.push(carta12);
+BARALHO.push(carta13);
+BARALHO.push(carta14);
+BARALHO.push(carta15);
+BARALHO.push(carta16);
+BARALHO.push(carta17);
+BARALHO.push(carta18);
+BARALHO.push(carta19);
+BARALHO.push(carta20);
+BARALHO.push(carta21);
+BARALHO.push(carta22);
+BARALHO.push(carta23);
+BARALHO.push(carta24);
+BARALHO.push(carta25);
+BARALHO.push(carta26);
+BARALHO.push(carta27);
+BARALHO.push(carta28);
+BARALHO.push(carta29);
+BARALHO.push(carta30);
+BARALHO.push(carta31);
+BARALHO.push(carta32);
+BARALHO.push(carta33);
+BARALHO.push(carta34);
+BARALHO.push(carta35);
+BARALHO.push(carta36);
+BARALHO.push(carta37);
+BARALHO.push(carta38);
+BARALHO.push(carta39);
+BARALHO.push(carta40);
+BARALHO.push(carta41);
+BARALHO.push(carta42);
+BARALHO.push(carta43);
+BARALHO.push(carta44);
+BARALHO.push(carta45);
+BARALHO.push(carta46);
+BARALHO.push(carta47);
+BARALHO.push(carta48);
+BARALHO.push(carta49);
+BARALHO.push(carta50);
+BARALHO.push(carta51);
+BARALHO.push(carta52);
 
-  function criarBaralho() {
-  document.getElementById("texto").innerHTML= "O baralho foi criado."
-  document.getElementById("img").src= "https://http2.mlstatic.com/baralho-cartas-baralho-jogo-baralho-D_NQ_NP_220411-MLB20535549819_012016-F.jpg"
+function criarBaralho() {
+  document.getElementById("texto").innerHTML = "O baralho foi criado.";
+  document.getElementById("img").src =
+    "https://http2.mlstatic.com/baralho-cartas-baralho-jogo-baralho-D_NQ_NP_220411-MLB20535549819_012016-F.jpg";
 }
 
 function embaralhar() {
-  document.getElementById("texto").innerHTML= "O baralho foi embaralhado."
-  document.getElementById("img").src= "https://th.bing.com/th/id/R.2d818d0635e3491a7ab5afce6dc6d58a?rik=%2fa0I0WJvEUBZYw&riu=http%3a%2f%2fbestanimations.com%2fGames%2fCards%2fcard-trick-animated-gif-8.gif&ehk=ir6c37sdHFucj2R5AoOpYVUx%2bUHG55VsYZN35lVE20o%3d&risl=&pid=ImgRaw&r=0"
+  document.getElementById("texto").innerHTML = "O baralho foi embaralhado.";
+  document.getElementById("img").src =
+    "https://th.bing.com/th/id/R.2d818d0635e3491a7ab5afce6dc6d58a?rik=%2fa0I0WJvEUBZYw&riu=http%3a%2f%2fbestanimations.com%2fGames%2fCards%2fcard-trick-animated-gif-8.gif&ehk=ir6c37sdHFucj2R5AoOpYVUx%2bUHG55VsYZN35lVE20o%3d&risl=&pid=ImgRaw&r=0";
   for (let i = BARALHO.length - 1; i > 0; i--) {
     let j = Math.floor(Math.random() * i);
     let k = BARALHO[i];
