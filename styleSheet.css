@@ -1,0 +1,43 @@
+body {
+  background-color: lightgrey;
+}
+
+h1 {
+  text-align: center;
+  letter-spacing: 10px;
+  background-color: grey;
+  text-decoration: underline;
+  font-weight: bold;
+  margin: 0% 40%;
+  padding: 20px;
+}
+
+.button {
+  border: hidden;
+  border-radius: 250px;
+  background-color: seashell;
+  padding: 30px;
+  margin: 0;
+  position: absolute;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#button1{
+  top: 75%;
+  left: 15%;}
+
+  #button2{
+    top: 75%;
+    left: 45%;
+  }
+
+  #button3{
+    top: 75%;
+    left: 75%;
+  }
+
+.button:hover{
+    cursor:pointer;
+    background-color: darksalmon;
+}
