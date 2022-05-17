@@ -5,7 +5,7 @@ class Cartas {
   }
 }
 
-var BARALHO = [52];
+var BARALHO = [];
 
 BARALHO.push(new Cartas("copas", "2"));
 BARALHO.push(new Cartas("copas", "3"));
