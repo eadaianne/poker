@@ -60,7 +60,6 @@ let carta52 = new Cartas("ouros", A);
 
 const BARALHO = [52];
 
-function criarBaralho() {
   BARALHO.push(carta1);
   BARALHO.push(carta2);
   BARALHO.push(carta3);
@@ -113,21 +112,25 @@ function criarBaralho() {
   BARALHO.push(carta50);
   BARALHO.push(carta51);
   BARALHO.push(carta52);
+
+  function criarBaralho() {
   document.getElementById("texto").innerHTML= "O baralho foi criado."
-  document.getElementByClassName("imagem").src= "ImagesIndex/Baralho.jpg"
+  document.getElementById("img").src= "https://http2.mlstatic.com/baralho-cartas-baralho-jogo-baralho-D_NQ_NP_220411-MLB20535549819_012016-F.jpg"
 }
 
 function embaralhar() {
+  document.getElementById("texto").innerHTML= "O baralho foi embaralhado."
+  document.getElementById("img").src= "https://th.bing.com/th/id/R.2d818d0635e3491a7ab5afce6dc6d58a?rik=%2fa0I0WJvEUBZYw&riu=http%3a%2f%2fbestanimations.com%2fGames%2fCards%2fcard-trick-animated-gif-8.gif&ehk=ir6c37sdHFucj2R5AoOpYVUx%2bUHG55VsYZN35lVE20o%3d&risl=&pid=ImgRaw&r=0"
   for (let i = BARALHO.length - 1; i > 0; i--) {
     let j = Math.floor(Math.random() * i);
     let k = BARALHO[i];
     BARALHO[i] = BARALHO[j];
     BARALHO[j] = k;
   }
-  document.getElementById("texto").innerHTML= "O baralho foi embaralhado"
 }
 
 function distribuirCartasComuns() {
   const CARTAS_COMUNS = BARALHO.slice(0, 6);
+  a = CARTAS_COMUNS;
   document.getElementById("texto").innerHTML = CARTAS_COMUNS;
 }

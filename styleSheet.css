@@ -41,3 +41,16 @@ h1 {
     cursor:pointer;
     background-color: darksalmon;
 }
+
+#texto {
+  text-align: center;
+  left: 45%;
+  font-size: 30px;
+}
+
+.imagem{
+  max-width: 300px;
+  max-height: 300px;
+  margin-left: 40%;
+  margin-top: 5%;
+}
